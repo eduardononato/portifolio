@@ -11,6 +11,7 @@ body {
         "sidebar"
         "footer";
     grid-template-columns: 1fr;
+    max-width: 1400px;
     gap: 10px;
     padding: 10px;
     margin: auto;
@@ -62,7 +63,7 @@ nav {
 
 .item img {
     text-align: center;
-    border-radius: 80px;
+    border-radius: 10px;
     width: 330px;
     height: 320px; 
     margin: 0 auto;
@@ -112,19 +113,23 @@ main {
 } 
 
 #projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
     grid-area: main3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
     padding: 10px;
 }
 
-#projetos h2 {
-  margin-bottom: 20px; /* espaço abaixo do título */
-  margin-top: 30px;    /* se quiser mais espaço acima do título */
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
 }
+
 
 .card {
 	background-color: #f9f9f9;
@@ -133,7 +138,6 @@ main {
 	padding: 20px;
 	margin: 20px;
 	width: 500px;
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
