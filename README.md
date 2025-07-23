@@ -7,6 +7,7 @@
 
 ### A estrutura HTML foi organizada da seguinte maneira:
 
+```
 <div class="container">
   <header>
     <nav>
@@ -35,6 +36,7 @@
     ...
   </footer>
 </div>
+```
 
 
 ## Estilização com CSS
